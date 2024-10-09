@@ -246,6 +246,30 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
        fill: #ffffff
    }
 }
+.meniu-item-link{
+    font-weight: 700;
+        font-size: 36px;
+    
+        line-height: 1.12;
+        letter-spacing: 0.02em;
+        color: #404bbf;
+}
+.portfolio-contakt{
+    font-weight: 700;
+    font-size: 36px;
+    
+        line-height: 1.12;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+}
+.addres-contakt{
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
 .meniu-navi{
     margin-bottom: auto;
 }
