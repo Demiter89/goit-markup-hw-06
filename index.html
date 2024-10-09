@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my homework 5</title>
+    <title>my homework 6</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -33,7 +33,42 @@
                     <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button class="burger-btn" type="button" data-meniu-open>
+                <svg class="burger-ikon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-heroicons-solid-menu"></use>
+                </svg>
+            </button>
         </div>
+        <div class="meniu" data-meniu>
+            <div class="meniu-navig-container">
+                <button class="button-cls" type="button" data-meniu-close>
+                    <svg class="modal-close-btn" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav class="meniu-navi">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link  current" href="./index.html">Studio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+                <address class="navi-adres">
+                    <ul class="contacts-list">
+                        <li class="contacts-item"><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+                <ul class="meniu-list">
+                    <li class="meniu-icons"></li>
+                    <li class="meniu-icons"></li>
+                    <li class="meniu-icons"></li>
+                    <li class="meniu-icons"></li>
+                </ul>
+            </div>
+        </div>
+
     </header>
     <!-- main content -->
     <main>
@@ -47,7 +82,7 @@
         </section>
 
         <!-- comany deskription -->
-        <section class="comany">
+        <section class="hidden">
             <div class="container">
                 <h2 class="visually-hidden">company description</h2>
                 <ul class="company-description-items">
@@ -98,7 +133,7 @@
             </div>
         </section>
         <!-- our team -->
-        <section class="our-team-style">
+        <section class="hidden">
             <div class="container">
                 <h2 class="our-team">Our Team</h2>
                 <ul class="our-team-list">
@@ -269,7 +304,7 @@
             </div>   
         </section>
         <!-- Our potfolio -->
-        <section class="our-portfolio-style">
+        <section class="hidden">
             <div class="container">
                 <h2 class="our-portfolio">Our Portfolio</h2>
                 <ul class="our-portfolio-list">
@@ -386,7 +421,7 @@
             
         </section>
     </main>
-    <footer class="page-footer">
+    <footer class="hidden">
         <div class="container-foter">
            
                 
@@ -460,7 +495,7 @@
         </div>
         
     </footer>
-    <div class="backdrop is-open" data-modal>
+    <div class="hidden" data-modal>
         <div class="modal">
             <button class="button-close" type="button" data-modal-close>
                 <svg class="modal-close-btn" width="8" height="8">
@@ -525,6 +560,8 @@
 
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/meniu.js"></script>
+    
 
 </body>
 
