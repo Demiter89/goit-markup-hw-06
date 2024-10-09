@@ -249,31 +249,44 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 .meniu-navi{
     margin-bottom: auto;
 }
+.social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: #404bbf;
+
+}
+.team-contakts {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.icon-style {
+    fill: #f4f4fd;
+}
 
 @media screen and (min-width: 768px){
     .meniu{
         display: none;
     }
 }
-.meniu-nav-list{
-    width: 151px;
-    height: 200px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.12;
-        letter-spacing: 0.02em;
-        color: #2e2f42;;
-}
+
 
 /* main paragraf */
-.container{
-    max-width: 320px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
 
-}
 .main-paragrph {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofise/mobile1x.jpg);
     max-width: 1440px;
