@@ -514,4 +514,8 @@ display: none;
         width: calc((100% - 72px)/4);
     }
 }
+/* our team */
+.our-team-style{
+    background-color: #f4f4fd;
+}
 
