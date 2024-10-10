@@ -131,48 +131,7 @@ h1, h2, h3, h4, h5, h6, p{
     padding: 188px 0;
 }
 
-.main-paragrph-size{
-        max-width: 496px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 56px;
-        
 
-}
-.main-paragrph-title{
-        font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #fff;
-       
-}
-.button-size{
-        min-width: 169px;
-        height: 56px;
-        margin-left: auto;
-        margin-right: auto;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-.button{
-        display: block;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: #fff;
-        background-color: #4d5ae5;
-        cursor: pointer;
-        border-radius: 4px;
-        border: none;
-        
-    }
-    .button:hover,
-    .button:focus{
-        background-color: #404bbf;
-        
-    }
     /* company-description */
     .comany{
         padding: 120px 0;

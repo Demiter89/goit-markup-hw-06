@@ -304,20 +304,10 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 .meniu-contacts-link-mail {
     font-weight: 500;
     font-size: 20px;
-
-    /* line-height: 24px; */
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #4d5ae5;
-}
-
-.meniu-contacts-link-tel {
-    font-weight: 500;
-    font-size: 20px;
-    
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
+    font-style: normal;
 }
 .meniu-addres-list {
     display: flex;
@@ -331,6 +321,12 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     padding-left: 16px;
     padding-right: 24px;
 }
+.meniu-contacts-link-mail:hover
+.meniu-contacts-link-mail:focus {
+    background-color: #4d5ae5;
+}
+
+
 
 
 @media screen and (min-width: 768px){
@@ -342,6 +338,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 
 
 /* main paragraf */
+
 .main-paragrph-title {
     font-weight: 700;
     font-size: 36px;
@@ -349,13 +346,13 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-}
-.main-paragrph-size {
     max-width: 216px;
     height: 160px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 72px;
 }
+
 .button {
     display: block;
     font-weight: 500;
@@ -367,30 +364,37 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     border-radius: 4px;
     border: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    
+
 
 }
+
 .button-size {
     min-width: 169px;
     height: 56px;
     margin-left: auto;
     margin-right: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
 }
+
 .button:hover,
 .button:focus {
     background-color: #404bbf;
 
 }
 .main-paragrph {
+    max-width: 320px;
+    height: 432px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofise/mobile1x.jpg);
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top:  72px;
+    padding-bottom: 72px;
 }
+
 @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
     .main-paragrph {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofise/mobile2x.jpg);
@@ -398,107 +402,33 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 
 }
 @media screen and (min-width: 768px) {
-    .main-paragrph-title {
-            font-weight: 700;
-            font-size: 56px;
-            line-height: 1.07;
-            letter-spacing: 0.02em;
-            text-align: center;
-            color: #fff;
-        }
-    
-        .main-paragrph-size {
-            max-width: 496px;
-            height: 120px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    
-        .button {
-            display: block;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.04em;
-            color: #fff;
-            background-color: #4d5ae5;
-            border-radius: 4px;
-            border: none;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    
-    
-        }
-    
-        .button-size {
-            min-width: 169px;
-            height: 56px;
-            margin-left: auto;
-            margin-right: auto;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-        }
-    
-        .button:hover,
-        .button:focus {
-            background-color: #404bbf;
-    
-        }
+   
 .main-paragrph {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofise/tablet1x.jpg);
+    max-width: 768px;
+    height: 436px;
+    padding-top: 112px;
+    padding-bottom: 112px;
 }
+.main-paragrph-title {
+     max-width: 496px;
+     height: 120px;
+     margin-top: 36px;
+ }
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .main-paragrph {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofise/tablet2x.jpg);
     }
+   
 }
 }
 @media screen and (min-width: 1158px) {
-    .main-paragrph-title {
-            font-weight: 700;
-            line-height: 1.12;
-            letter-spacing: 0.02em;
-            text-align: center;
-            color: #fff;
-        }
     
-        .main-paragrph-size {
-            margin-left: auto;
-            margin-right: auto;
-        }
-    
-        .button {
-            display: block;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.04em;
-            color: #fff;
-            background-color: #4d5ae5;
-            border-radius: 4px;
-            border: none;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    
-    
-        }
-    
-        .button-size {
-            min-width: 169px;
-            height: 56px;
-            margin-left: auto;
-            margin-right: auto;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-        }
-    
-        .button:hover,
-        .button:focus {
-            background-color: #404bbf;
-    
-        }
     .main-paragrph {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofise/BI11581x.jpg);
+        max-width: 1158px;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -529,10 +459,30 @@ display: none;
         letter-spacing: 0.02em;
         color: #434455;
 }
+.company-description-items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+}
+.comany{
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 @media screen and (min-width: 768px){
     .ikons-description{
         display: none;
     }
+.company-description-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}
+.company-description-list {
+    width: calc((100% - 24px)/2);
+}
+.company-description-sub-items{
+    text-align: left;
+}
 }
 
 @media screen and (min-width: 1158px){
@@ -546,4 +496,8 @@ display: none;
         margin-bottom: 8px;
         border: 1px solid #8e8f99;
     }
+    .company-description-list{
+        width: calc((100% - 72px)/4);
+    }
 }
+
