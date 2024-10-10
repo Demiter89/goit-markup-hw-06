@@ -246,29 +246,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
        fill: #ffffff
    }
 }
-.meniu-item-link{
-    font-weight: 700;
-        font-size: 36px;
-    
-        line-height: 1.12;
-        letter-spacing: 0.02em;
-        color: #404bbf;
-}
-.portfolio-contakt{
-    font-weight: 700;
-    font-size: 36px;
-    
-        line-height: 1.12;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-}
-.addres-contakt{
-    font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #434455;
-}
 
 .meniu-navi{
     margin-bottom: auto;
@@ -295,12 +272,66 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 40px;
 }
 
 .icon-style {
     fill: #f4f4fd;
 }
+.meniu-link-studio{
+    font-weight: 700;
+        font-size: 36px;
+    
+        /* line-height: 40px; */
+        line-height: 1.12;
+        letter-spacing: 0.02em;
+        color: #404bbf;
+}
+.portfolio-contakt-link {
+    font-weight: 700;
+    font-size: 36px;
+
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+.meniu-nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 16px;
+}
+.meniu-contacts-link-mail {
+    font-weight: 500;
+    font-size: 20px;
+
+    /* line-height: 24px; */
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #4d5ae5;
+}
+
+.meniu-contacts-link-tel {
+    font-weight: 500;
+    font-size: 20px;
+    
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.meniu-addres-list {
+    display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-left: 16px;
+        padding-bottom: 48px;
+}
+.team-contakts{
+    padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 24px;
+}
+
 
 @media screen and (min-width: 768px){
     .meniu{
@@ -309,11 +340,51 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 }
 
 
-/* main paragraf */
 
+/* main paragraf */
+.main-paragrph-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+}
+.main-paragrph-size {
+    max-width: 216px;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background-color: #4d5ae5;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    
+
+}
+.button-size {
+    min-width: 169px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.button:hover,
+.button:focus {
+    background-color: #404bbf;
+
+}
 .main-paragrph {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofise/mobile1x.jpg);
-    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
@@ -324,7 +395,155 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     .main-paragrph {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofise/mobile2x.jpg);
 } 
+
 }
 @media screen and (min-width: 768px) {
+    .main-paragrph-title {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 1.07;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: #fff;
+        }
+    
+        .main-paragrph-size {
+            max-width: 496px;
+            height: 120px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .button {
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            color: #fff;
+            background-color: #4d5ae5;
+            border-radius: 4px;
+            border: none;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    
+    
+        }
+    
+        .button-size {
+            min-width: 169px;
+            height: 56px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        }
+    
+        .button:hover,
+        .button:focus {
+            background-color: #404bbf;
+    
+        }
+.main-paragrph {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofise/tablet1x.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .main-paragrph {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofise/tablet2x.jpg);
+    }
+}
+}
+@media screen and (min-width: 1158px) {
+    .main-paragrph-title {
+            font-weight: 700;
+            line-height: 1.12;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: #fff;
+        }
+    
+        .main-paragrph-size {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .button {
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            color: #fff;
+            background-color: #4d5ae5;
+            border-radius: 4px;
+            border: none;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    
+    
+        }
+    
+        .button-size {
+            min-width: 169px;
+            height: 56px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        }
+    
+        .button:hover,
+        .button:focus {
+            background-color: #404bbf;
+    
+        }
+    .main-paragrph {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofise/BI11581x.jpg);
+    }
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .main-paragrph {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofise/BI11582x.jpg);
+        }
+    }
+}
+/* company description */
+.ikons-description{
+display: none;
+}
+.company-description-sub-items{
+    text-align: center;
+    margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+}
+.company-description-sub-items-text{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+@media screen and (min-width: 768px){
+    .ikons-description{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1158px){
+.ikons-description {
+        background: #f4f4fd;
+        height: 112px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+        border: 1px solid #8e8f99;
+    }
 }
