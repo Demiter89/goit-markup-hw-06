@@ -597,7 +597,7 @@ display: none;
 }
 @media screen and (min-width: 768px){
     .our-conteiner-styile{
-        max-width: 768px;
+        width: 584px;
     }
     .our-team-list { 
             flex-direction: row;
@@ -610,6 +610,15 @@ display: none;
             width: calc((100% - 24px)/2);
         }
 }
+@media screen and (min-width: 1158px){
+    .team-list{
+        width: calc((100% - 72px)/4);
+        }
+                .our-conteiner-styile {
+                    width: 1156px;
+                }
+}
+
 /* our portfolio */
 .our-portfolio-styl {
     padding-top: 120px;
