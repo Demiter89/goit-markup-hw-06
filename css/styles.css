@@ -665,13 +665,38 @@ display: none;
         width: 360px;
         height: 120px;
 }
-.overley-tex{
-    display: none;
+.img-portfolio {
+    display: block;
+}
+
+.overley-tex {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f4f4fd;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-main:hover .overley-tex {
+    transform: translateY(0);
+}
+
+.list-main:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.overley-img {
+    position: relative;
+    overflow: hidden;
 }
 @media screen and (min-width: 768px){
-    .overley-texg{
-        display: none;
-    }
     .our-portfolio-list{
         flex-direction: row;
         flex-wrap: wrap;
@@ -680,6 +705,37 @@ display: none;
         .list-main{
             width: calc((100% - 24px)/2);
         }
+                .img-portfolio {
+                    display: block;
+                }
+        
+                .overley-tex {
+                    position: absolute;
+                    top: 0;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: #f4f4fd;
+                    width: 100%;
+                    height: 100%;
+                    letter-spacing: 0.02em;
+                    padding: 40px 32px;
+                    background-color: #4d5ae5;
+                    transform: translateY(100%);
+                    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
+        
+                .list-main:hover .overley-tex {
+                    transform: translateY(0);
+                }
+        
+                .list-main:hover {
+                    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+                }
+        
+                .overley-img {
+                    position: relative;
+                    overflow: hidden;
+                }
 
 }
 @media screen and (min-width: 1156px){
@@ -722,9 +778,7 @@ display: none;
                         }
         }
 /* foter */
-.foter-style{
-    background: #2e2f42;
-}
+
 .footer-description {
     font-weight: 400;
     font-size: 16px;
@@ -733,15 +787,6 @@ display: none;
     color: #f4f4fd;
     max-width: 264px;
 }
-.logo-part-footer{
-    font-weight: 700;
-        font-size: 18px;
-        line-height: 1.16667;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #f4f4fd;
-}
-
 
 .second-foter {
     display: inline-block;
@@ -784,6 +829,13 @@ display: none;
     margin: 0 auto;
     display: flex;
     align-items: baseline;
+    background: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+
 }
 
 .footer-logo-conteiner {
@@ -845,23 +897,13 @@ display: none;
 
 .input-text {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
+    margin-left: 16px;
 }
 
 .button-subscribe {
     margin-left: 80px;
-}
-.container-foter{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 72px;
-    padding-top: 96px;
-    padding-bottom: 96px;
-}
-.input-text{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
 }
 /* modal */
 .backdrop {
