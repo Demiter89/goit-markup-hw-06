@@ -778,15 +778,13 @@ display: none;
                         }
         }
 /* foter */
+.page-footer{
+    background-color: #2e2f42;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
 .container-foter {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-    display: flex;
     align-items: baseline;
-    background: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
@@ -794,6 +792,8 @@ display: none;
 }
 
 .footer-description {
+    width: 264px;
+    height: 112px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -843,10 +843,6 @@ display: none;
 .social-link-foter:hover,
 .social-link-foter:focus {
     background-color: #31d0aa;
-}
-
-.footer-logo-conteiner {
-    margin-right: 120px;
 }
 
 .subscribe-pargraf {
@@ -902,20 +898,41 @@ display: none;
     color: #ffffff;
 }
 
-
-.button-subscribe {
-    margin-left: 80px;
-}
 .input-text {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    margin-left: 8px;
 }
 @media screen and (min-width: 768px){
   .input-mail{
     width: 264px;
   }
+}
+@media screen and (min-width: 1156px) {
+    .input-text {
+            display: flex;
+            gap: 24px;
+        }
+        .container-foter{
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 0;
+}
+.input-text{
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin: 0;
+}
+.button-subscribe{
+    margin: 0;
+}
+.footer-description{
+    width: 264px;
+    height: 112px;
+}
+.footer-logo-conteiner{
+    margin: 0;
+}
 }
 /* modal */
 .backdrop {
@@ -941,8 +958,8 @@ display: none;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: #fcfcfc;
     border-radius: 4px;
@@ -1129,6 +1146,19 @@ display: none;
     margin-right: auto;
     margin-left: auto;
 }
+.checkbox-puting{
+    display: flex;
+}
+.checkbox-style{
+    flex-shrink: 0;
+}
+@media screen and (min-width: 768px) {
+    .modal{
+        width: 408px;
+        min-height: 584px;
+    }
+}
+
 
 
 
