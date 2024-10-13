@@ -771,17 +771,23 @@ display: none;
                         }
         }
 /* foter */
-.page-footer{
-    background-color: #2e2f42;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    .page-footer {
+        padding: 96px 0;
+        background-color: #2e2f42;
+        
 }
 .container-foter {
-    align-items: baseline;
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
 
+}
+.footer-logo-conteiner{
+    .footer-logo-text {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 }
 
 .footer-description {
@@ -900,8 +906,9 @@ display: none;
   .input-mail{
     width: 264px;
   }
-  .container-foter{
-    gap: 24px;
+  .container-foter {
+      gap: 24px;
+      width: 568px;
   }
 }
 @media screen and (min-width: 1156px) {
@@ -1094,20 +1101,22 @@ display: none;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-}
+    }
 
 .checkbox-mayself {
     flex-shrink: 0;
-    width: 16px;
-    height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
-    margin-right: 4px;
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        fill: #404bbf;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        margin-right: 8px;
+        align-items: center;
+        justify-content: center;
+        fill: transparent;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-style:checked+.checkbox-puting>.checkbox-mayself {
@@ -1147,9 +1156,10 @@ display: none;
     margin-right: auto;
     margin-left: auto;
 }
-.checkbox-puting{
-    flex-shrink: 0;
-}
+
+
+
+
 @media screen and (min-width: 768px) {
     .modal{
         width: 408px;
