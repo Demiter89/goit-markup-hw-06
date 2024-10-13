@@ -907,6 +907,9 @@ display: none;
   .input-mail{
     width: 264px;
   }
+  .container-foter{
+    gap: 24px;
+  }
 }
 @media screen and (min-width: 1156px) {
     .input-text {
@@ -917,6 +920,10 @@ display: none;
             display: flex;
             flex-wrap: nowrap;
             margin: 0;
+}
+.container-foter {
+    display: flex;
+    gap: 72px;
 }
 .input-text{
     flex-wrap: nowrap;
@@ -1147,7 +1154,7 @@ display: none;
     margin-left: auto;
 }
 .checkbox-puting{
-    display: flex;
+    flex-shrink: 0;
 }
 .checkbox-style{
     flex-shrink: 0;
