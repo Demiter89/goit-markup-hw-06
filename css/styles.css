@@ -1104,6 +1104,7 @@ display: none;
 }
 
 .checkbox-mayself {
+    flex-shrink: 0;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1154,9 +1155,6 @@ display: none;
     margin-left: auto;
 }
 .checkbox-puting{
-    flex-shrink: 0;
-}
-.checkbox-style{
     flex-shrink: 0;
 }
 @media screen and (min-width: 768px) {
