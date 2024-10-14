@@ -940,7 +940,7 @@ display: flex;
         padding: 0;
         row-gap: 72px;
         column-gap: 24px;
-      width: 584px;
+      max-width: 584px;
   }
         .footer-logo-conteiner {
             max-width: 264px;
@@ -970,13 +970,14 @@ display: flex;
     .page-footer {
             padding: 100px 0;
         }
-                .container-foterr {
+                .container-foter {
                     align-items: baseline;
                     justify-content: center;
                     margin: 0 auto;
                     flex-wrap: nowrap;
                     padding: 0 15px;
                     gap: 0;
+                    max-width: 1156px;
                 }
 .footer-logo-conteiner {
     margin-right: 120px;
