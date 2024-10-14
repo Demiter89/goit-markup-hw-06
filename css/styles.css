@@ -199,6 +199,7 @@ p {
 position: fixed;
 top: 0;
 left: 0;
+z-index: 999999;
 width: 100%;
 height: 100%;
 background-color: #fff;
@@ -217,6 +218,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     position: relative;
     padding-top: 72px;
     padding-bottom: 40px;
+    padding-left: 16px;
 
     display: flex;
     flex-direction: column;
@@ -251,8 +253,8 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     margin-bottom: auto;
 }
 .social-link {
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: #4d5ae5;
     display: flex;
@@ -267,10 +269,9 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     background-color: #404bbf;
 
 }
-.team-contakts {
-    margin-top: 8px;
+.team-contakts-meniu {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     gap: 40px;
 }
@@ -290,7 +291,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-left: 16px;
 }
 .meniu-contacts-link-mail {
     font-weight: 500;
@@ -304,21 +304,25 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     display: flex;
         flex-direction: column;
         gap: 24px;
-        padding-left: 16px;
-        padding-bottom: 48px;
+        margin-bottom: 48px;
 }
 .team-contakts{
-    padding-bottom: 40px;
-    padding-left: 16px;
-    padding-right: 24px;
+    display: flex;
+        justify-content: center;
+        gap: 40px;
 }
+.contacts-ikons
+{
+    width: 40px;
+    height: 40px;
+}
+
 .meniu-contacts-link-mail:hover,
 .meniu-contacts-link-mail:focus,
 .portfolio-contakt-link:hover,
 .portfolio-contakt-link:focus{
     color: #4d5ae5;
 }
-
 
 
 
@@ -377,7 +381,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 }
 .main-paragrph {
     max-width: 320px;
-    height: 432px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofise/mobile1x.jpg);
     margin-left: auto;
     margin-right: auto;
@@ -385,6 +388,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     background-position: center;
     background-size: cover;
     padding-top: 72px;
+    padding-bottom: 72px;
 }
 
 @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
@@ -450,17 +454,22 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 .ikons-description{
 display: none;
 }
+.comany{
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
 .company-description-sub-items{
     text-align: center;
     margin-bottom: 8px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
+        font-weight: 700;
+            font-size: 36px;
+            line-height: 1.12;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: #2e2f42;
 }
 .company-description-sub-items-text{
-    font-weight: 400;
+    font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -471,10 +480,7 @@ display: none;
         flex-direction: column;
         row-gap: 72px;
 }
-.comany{
-    padding-top: 96px;
-    padding-bottom: 96px;
-}
+
 @media screen and (min-width: 768px){
     .ikons-description{
         display: none;
@@ -506,6 +512,10 @@ display: none;
     .company-description-list{
         width: calc((100% - 72px)/4);
     }
+        .comany {
+            margin-top: 120px;
+            margin-bottom: 120px;
+        }
 }
 /* our team */
 .our-team-style{
@@ -531,6 +541,7 @@ display: none;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 .our-team-position{
     font-weight: 400;
@@ -539,6 +550,9 @@ display: none;
         letter-spacing: 0.02em;
         text-align: center;
         color: #434455;
+}
+.contacts-ikons{
+    align-items: center;
 }
 .our-team-list{
     display: flex;
@@ -581,9 +595,7 @@ display: none;
         0px 2px 1px rgba(46, 47, 66, 0.08);
         text-align: center;
         border-radius: 0 0 4px 4px;
-        padding: 0px 0px 32px 0px;
         max-width: 264px;
-        height: 428px;
 }
 .list-personel{
     padding: 32px 0;
@@ -610,6 +622,10 @@ display: none;
                 .our-conteiner-styile {
                     width: 1156px;
                 }
+                                .our-team-style {
+                                    padding-top: 120px;
+                                    padding-bottom: 120px;
+}
 }
 
 /* our portfolio */
@@ -627,10 +643,9 @@ display: none;
         margin-bottom: 72px;
 }
 .list-main{
-    position: relative;
-    overflow: hidden;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .our-portfolio-list{
     display: flex;
     flex-direction: column;
@@ -642,6 +657,7 @@ display: none;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 .servise-disdkription{
     font-weight: 400;
@@ -655,8 +671,6 @@ display: none;
         border-left: 1px solid #e7e9fc;
         border-right: 1px solid #e7e9fc;
         padding: 32px 16px;
-        width: 360px;
-        height: 120px;
 }
 .img-portfolio {
     display: block;
@@ -771,9 +785,11 @@ display: none;
                         }
         }
 /* foter */
+
     .page-footer {
         padding: 96px 0;
         background-color: #2e2f42;
+        justify-content: center;
         
 }
 .container-foter {
@@ -783,16 +799,18 @@ display: none;
 
 }
 .footer-logo-conteiner{
-    .footer-logo-text {
-            display: flex;
+     
             flex-wrap: wrap;
-            justify-content: center;
         }
-}
 
+.subscribe-pargraf{
+    text-align: center;
+}
+.footer-sociallinks{
+    text-align: center;
+}
 .footer-description {
     width: 264px;
-    height: 112px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -908,7 +926,7 @@ display: none;
   }
   .container-foter {
       gap: 24px;
-      width: 568px;
+      width: 584px;
   }
 }
 @media screen and (min-width: 1156px) {
@@ -928,17 +946,17 @@ display: none;
 .input-text{
     flex-wrap: nowrap;
     gap: 24px;
-    margin: 0;
 }
 .button-subscribe{
     margin: 0;
 }
 .footer-description{
     width: 264px;
-    height: 112px;
 }
-.footer-logo-conteiner{
-    margin: 0;
+
+.container-foter {
+    gap: 24px;
+    max-width: 1158px;
 }
 }
 /* modal */
@@ -1065,7 +1083,8 @@ display: none;
 }
 
 .rewiew-form-input:focus-within+.icon-rewiew-form-nput {
-    fill: #4D5AE5;
+
+    fill: #f4f4fd;
 }
 
 .rewiew-form-input-texteria {
@@ -1097,27 +1116,28 @@ display: none;
 }
 
 .checkbox-puting {
+    display: flex;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    align-items: center;
     }
 
 .checkbox-mayself {
     flex-shrink: 0;
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    fill: #404bbf;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    margin-right: 8px;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        fill: #404bbf;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        margin-right: 8px;
+        align-items: center;
+        justify-content: center;
+        fill: transparent;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-style:checked+.checkbox-puting>.checkbox-mayself {
@@ -1158,9 +1178,11 @@ display: none;
     margin-right: auto;
     margin-left: auto;
 }
-.policy-style{
-    text-align: center;
+.icon-checkbox {
+    align-items: center;
 }
+
+
 
 
 
@@ -1170,9 +1192,9 @@ display: none;
     .modal{
         width: 408px;
         min-height: 584px;
+        padding: 72px 24px 24px 24px;
     }
 }
-
 
 
 
