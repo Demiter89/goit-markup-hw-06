@@ -837,6 +837,7 @@ display: none;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+    text-align: center;
 }
 .team-contakts-foter {
     gap: 16px;
@@ -935,7 +936,7 @@ display: flex;
         flex-wrap: wrap;
         align-items: baseline;
         justify-content: flex-start;
-        margin-left: 108px;
+        
     
         padding: 0;
         row-gap: 72px;
